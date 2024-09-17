@@ -15,3 +15,6 @@ Reference Equality: Functions are compared by reference, so each new function in
 
 # State is managed by React and is only updated when you explicitly call the setter function. React optimizes re-renders by checking if the new state is different from the old state.
 Functions, however, are recreated on every render, resulting in a new reference each time. This can cause unnecessary re-renders if passed as props, which useCallback helps to cotrol unwanted rerander of child compnent..
+
+
+# Use of useRef  hook in React.

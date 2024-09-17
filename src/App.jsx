@@ -35,6 +35,9 @@ function App() {
 
 
   const copyPasswordToClipboard=()=>{
+    passwordRef.current?.select();  // all these are google APIs for DOM can found from useRef documenatation.
+    // passwordRef.current?.setSelectRange(0,3); // by this way we can  make range how much text to select .
+    window.navigator.clipboard.writeText(password);   // this copy the text  and when we paste it then it go pasted there  .
 
   }
   
@@ -97,11 +100,18 @@ function App() {
           </div>
         </div>
       </div>
+
+
     </>
   )
 }
 
 export default App
+
+
+
+
+
 
 
 
